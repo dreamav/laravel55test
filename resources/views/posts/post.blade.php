@@ -25,6 +25,7 @@
 				<button type="submit" class="btn btn-primary">Add comment</button>
 			</div>
 		</form>
+		@include('posts.partials.errors')
 	</div>
 </div>
 
