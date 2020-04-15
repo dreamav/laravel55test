@@ -17,7 +17,7 @@ class RegistrationController extends Controller
     	$this->validate(request(),[
     		'name'=>'required',
     		'email'=>'required|email',
-    		'password'=>'required'
+    		'password'=>'required|confirmed'
     	]);
     	// Create and save user
     	$user = User::create(request(['name','email','password']));

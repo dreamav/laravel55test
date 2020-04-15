@@ -18,12 +18,13 @@
 		<input type="password" class="form-control" id="password" name="password">
 	</div>
 	<div class="form-group">
-		<label for="password">Confirm Password</label>
-		<input type="password" class="form-control" id="password" name="password">
+		<label for="password_confirmation">Password confirmation</label>
+		<input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
 	</div>
 	<div class="form-group">
 		<button type="submit" class="btn btn-primary">Register</button>
 	</div>
+		@include('posts.partials.errors')
 </form>
 
 
