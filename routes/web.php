@@ -15,6 +15,7 @@ Route::get('/tasks', 'TasksController@index');
 Route::get('tasks/{task}', 'TasksController@show');
 
 Route::get('blog','PostController@index');
+Route::get('blog/posts/create','PostController@create');
 
 Auth::routes();
 
