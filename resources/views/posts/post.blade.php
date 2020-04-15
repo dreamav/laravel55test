@@ -17,7 +17,7 @@
 <div class="card">
 	<div class="card-block">
 		<form action="/posts/{{$post->id}}/comments">
-			{{method_field('POST')}}
+			{{method_field('POST')}}  
 			<div class="form-group">
 				<textarea name="body" placeholder="your comment here" class="form-control"></textarea>
 			</div>
