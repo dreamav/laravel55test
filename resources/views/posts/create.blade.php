@@ -15,16 +15,5 @@
   </div>
   <button type="submit" class="btn btn-primary">Publish</button>
 </form>
-
-@if ($errors)
-<div class="form-group">
-<div class="alert alert-danger">
-  <ul>
-    @foreach ($errors->all() as $error)
-    <li>{{$error}}</li>
-    @endforeach
-  </ul>
-</div>
-</div>
-@endif
+@include('posts.partials.errors')
 @endsection
